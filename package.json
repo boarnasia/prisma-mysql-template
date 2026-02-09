@@ -12,7 +12,15 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@faker-js/faker": "^10.3.0",
     "@prisma/adapter-mariadb": "^7.3.0",
-    "@prisma/client": "^7.3.0"
+    "@prisma/client": "^7.3.0",
+    "commander": "^14.0.3",
+    "dotenv": "^17.2.4"
+  },
+  "scripts": {
+    "migrate": "prisma migrate dev",
+    "migrate:refresh": "prisma migrate reset --force",
+    "generate": "prisma generate"
   }
 }

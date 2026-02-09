@@ -1,9 +1,14 @@
 {
   "compilerOptions": {
+    // Prizma settings
+    // @see https://www.prisma.io/docs/getting-started/prisma-orm/quickstart/mysql
+    "module": "ESNext",
+    "target": "ES2023",
+    "esModuleInterop": true,
+    // "ignoreDeprecations": "6.0", // VSCode でエラーが出るのでコメントアウトしてます
+
     // Environment setup & latest features
     "lib": ["ESNext"],
-    "target": "ESNext",
-    "module": "Preserve",
     "moduleDetection": "force",
     "jsx": "react-jsx",
     "allowJs": true,
